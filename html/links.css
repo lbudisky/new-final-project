@@ -1,0 +1,15 @@
+*{
+    text-align:center;
+    
+}
+html{
+    background:radial-gradient(circle,#252525,black);
+}
+div{
+    background-color:#f2a415 ;
+    color:black;
+    border-radius:10px;
+    border-width:200px;
+    font-size:200%;
+    font-family: 'Courier New', monospace;
+}

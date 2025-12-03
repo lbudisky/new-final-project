@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 120px;
+    background-color: #252525;
+    justify-content: space-around;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    position: fixed;
+}
+.navbar-right{
+    gap: 40px;
+}
+/* NAV BUTTONS */
+
+.navbar a {
+    color: rgb(223, 155, 9);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:bolder;
+}
+
+.navbar a:hover {
+    color: #aaa;
+    text-decoration:underline;
+}
+
+.back{
+    width:100%;
+    object-fit: cover;
+    display: block;
+    height:550px;
+ 
+}
+
+/* Make logo overlap into navbar area */
+.logo {
+    height:90px;
+
+}
+.main{
+    width:100%;
+    background-color: #f2a415;
+    color:rgb(0, 0, 0);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+   
+}
+.gridB,.gridA{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:#252525;
+    width:100%;
+    height:250px;
+}
+.grid-rightB,.grid-rightA{
+    background-color:#252525;
+    padding-top:5px;
+}
+.grid-rightB img{
+    height:250px;
+    float:left;
+    margin-left:100px;
+}
+.grid-rightA img{
+    height:250px;
+    float:right;
+    margin-right:100px;
+}
+.grid-leftB,.grid-leftA{
+    background-color:#f2a415;
+    margin:5px;
+    padding-left:5px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    border-radius:10px;
+    margin-top:20px;
+    padding-bottom:10px;
+    font-weight: bold;
+}
+.footer{
+    background-color:black;
+    color:#f2a415;
+    text-align:center;
+    height:200px;
+    background: linear-gradient(to bottom,#252525,black);
+    padding-top:40px;
+}
+ul{
+    display:flex;
+    text-align:center;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration:underline;
+}
+.floating{
+    position: fixed;   
+    bottom: 20px;      
+    right: 20px;         
+    width: 60px;          
+    height: 60px;
+    z-index: 1000;        
+    cursor: pointer;
+}
+.floating img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+.floating:hover img{
+    transform: scale(1.3);
+}
+.copy{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+@media (max-width:800px){
+    .navtext{
+        display:none;
+    }
+
+    .logo{
+        width:100%;
+        margin-left:70px;
+    }
+    
+    .hamburger_menu{
+        display:block;
+        top:10px;
+        right:15px;
+        width: 100px;
+    }
+    .hamburger_menu img{
+        width:50px;
+    }
+    .hamburger_menu{
+        cursor:pointer;
+    }
+    .hamburger_menu:hover .nav_list_hamburger_menu{
+    display:block;
+    padding-top:10px;
+    list-style-type:none;
+    }
+    .nav_list_hamburger_menu li{
+        border-top:1px solid;
+        color:black;
+    }
+}
